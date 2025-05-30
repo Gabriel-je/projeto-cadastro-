@@ -111,11 +111,11 @@ def funcao_salvar_dados():
     ok.pushButton.clicked.connect(ok.close)
 
 app = QtWidgets.QApplication([])
-menu = uic.loadUi("menu.ui")
-formulario=uic.loadUi("formulario.ui")
-telaLista = uic.loadUi("lista.ui")
-telaEditar = uic.loadUi("editor_lista.ui")
-ok = uic.loadUi("notificacao.ui")
+menu = uic.loadUi("telas/menu.ui")
+formulario=uic.loadUi("telas/formulario.ui")
+telaLista = uic.loadUi("telas/lista.ui")
+telaEditar = uic.loadUi("telas/editor_lista.ui")
+ok = uic.loadUi("telas/notificacao.ui")
 
 menu.pushButton_2.clicked.connect(menu.close)
 menu.pushButton_2.clicked.connect(formulario.show)
